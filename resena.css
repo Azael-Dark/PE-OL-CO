@@ -1,0 +1,489 @@
+body{
+    margin: 0;
+    }
+    
+    
+    header {
+        background-color: rgb(243, 238, 238);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        top:0
+    }
+    
+    header .logo{
+        cursor: pointer;
+        order: 3;
+        margin-left: auto;
+    }
+    
+    header .logo img{
+        height: 70px;
+        width: 100%;
+        transition: all 0.4s;
+    }
+    
+    header .logo img:hover{
+        transform: scale(1.2);
+    }
+    
+    header nav{
+        order: 1;
+    }
+    
+    header ul{
+        list-style: none;
+    }
+    
+    header ul li{
+        display: inline-block;
+        padding: 0 80px;    
+    }
+    header ul li:nth-child(1){
+        padding: 0 20px 0 0;
+    }
+    header ul li:hover{
+        transform: scale(1.1);
+    }
+    
+    header ul a{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-style: normal;
+        color: #003558;
+        text-decoration: none;    
+    }
+    
+    
+    
+    .container .titulo_principal{
+        padding: 70px;  
+        width: 100%;
+    }
+    
+    .container .titulo_principal #titulo_pueblo{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 150px;
+        font-style: normal;
+        color:#003558;
+    }
+    .container .titulo_principal #sub_pueblo{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    .texto_titulo_principal .fecha_fundacional{
+        padding-top: 90px;
+        text-align: center;
+        font-size: 20px;
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+    
+    .texto_titulo_principal   .container_img_texto_titulo_principal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .texto_titulo_principal   .container_img_texto_titulo_principal img{
+        width: 50rem;
+        height: 26rem;
+    }
+    
+    #resena{
+        padding: 80px;
+        text-align: center;
+        font-size: 20px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 800;
+        font-style: bold;
+    }
+    
+    .segundo_slice{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    
+    }
+    
+    .segundo_slice .texto_ave_fenix{
+        height: 400px;
+        padding: 40px;
+    }
+    
+    .segundo_slice .texto_ave_fenix #fenix_titulo{
+        font-size: 22px;
+        text-align: center;
+        color: rgb(89, 94, 99);
+        font-style: italic;
+        font-weight: 600;
+        font-family: "Ubuntu", sans-serif;
+    }
+    
+    .segundo_slice .texto_ave_fenix #parrafo_fenix{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 25px;
+        line-height: 2;
+    }
+    
+    .segundo_slice .imagen_fenix{
+        height: 500px;
+        align-items: end;
+        padding-right: 60px;
+    }
+    
+    .segundo_slice .imagen_fenix img{
+        padding: 40px;
+        height: 400px;  
+    }
+    
+    @keyframes show_imagen_fenix{
+        from{
+            opacity: 0;
+            scale: 25%;
+        }
+        to{
+            opacity: 1;
+            scale: 100%;
+        }
+    }
+    
+    .segundo_slice .imagen_fenix img{
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: show_imagen_fenix;
+        animation-range: entry 25% cover 30%;
+        animation-fill-mode: both;
+    
+    }
+    
+    
+    
+    .linea_separadora{
+        border: 3px solid rgb(11, 106, 143);
+        width: 91%;
+        margin: 50px;
+    }
+    
+    .parrafo2_fenix{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 25px;
+        line-height: 2;
+    }
+    
+    .segundo_slice_2{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 60rem;
+        margin-left: 30px;
+        width: 110rem;
+    }
+    
+    .parrafo2_fenix{
+        background:linear-gradient(rgb(255, 255, 255), rgb(154, 186, 199));
+        border-radius: 50px;
+        height: 57.5rem;
+        padding: 30px; 
+        
+    }
+    
+    .parrafo2_fenix p{
+        color: #003558;
+        padding: 20px;
+        font-size: 19px;
+        text-align: justify;
+        line-height: 2cap;
+        width: 600px;
+    }
+    
+    .imagenes_derecha{
+        background-color: #003558;
+        border-radius: 50px;
+        margin-right: 5em;
+        flex-direction: column-reverse;
+        height: 60rem;
+        width: 100%;
+    }
+    .imagen_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagenes_derecha .imagen_logo img{
+        border: 9px solid rgb(228, 239, 252);
+        border-radius: 925px;
+        background-color: #003558;
+        width: 500px;
+        height: 25rem;
+        padding: 20px;
+        margin: 23px;
+    }
+    
+    .imagenes_derecha .imagen_dos img{
+        background-color: #003558;
+        border: 9px solid rgb(228, 239, 252);
+        height: 24rem;
+        width: 90%;
+        padding: 15px;
+    }
+    .imagen_dos img{
+        margin-left: 25px;
+        width: 300px;
+    }
+    
+    .container_tercer_slide{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .seccion_uno{
+        background-color: beige;
+        width: 30%;
+        height: 130em;
+    }
+    
+    .seccion_uno .container_fiestas h1{
+        color: rgb(255, 145, 0);
+        font-family: "Ubuntu", sans-serif;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .seccion_uno .container_fiestas hr{
+        width: 50%;
+    }
+    .seccion_uno .container_fiestas ul{
+        margin: 22px;
+        font-size: 19px;
+        line-height: 3cap;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        list-style-type: circle;
+    }
+    
+    .seccion_uno .epigrafe h1{
+        margin-top: 25px;
+        font-size: 25px;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+    }
+    
+    .seccion_uno .epigrafe hr{
+        width: 50%;
+    }
+    
+    .seccion_uno .epigrafe p{
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-style: italic;
+    }
+    
+    .seccion_uno .cumpleanos h2{
+        font-size: 25px;
+        font-family: "Ubuntu", sans-serif;
+        text-align: center;
+    }
+    .seccion_uno .cumpleanos p{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 600;
+        text-align: center; 
+    }
+    .seccion_uno .cumpleanos ul{
+        font-size: 19px;
+        line-height: 2rem;
+        font-family: "Ubuntu", sans-serif;
+    }
+    .seccion_uno .cumpleanos hr{
+        width: 50%;
+    }
+    
+    .seccion_dos{
+        background-color: rgb(248, 248, 238);
+        border-radius: 50px;
+        width: 70%;
+        height: 130em;
+    }
+    
+    .seccion_dos .gentilicios {
+        font-family: "Ubuntu", sans-serif;
+        text-align: center;
+        font-size: 19px; 
+    }
+    .seccion_dos .gentilicios  h1{
+        color: rgb(255, 145, 0);
+        
+    }
+    .seccion_dos .gentilicios hr{
+        width: 50%;
+    }
+    .seccion_dos .apelativos{
+        font-family: "Ubuntu", sans-serif;
+        text-align: center;
+        font-size: 19px;
+    }
+    .seccion_dos .apelativos .nuevo_penol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion_dos .apelativos img{
+        width: 900px;
+        text-align: center;
+        padding: 30px;
+        height: fit-content;
+    }
+    @keyframes show_imagen_penol{
+        from{
+            opacity: 0;
+            scale: 25%;
+        }
+        to{
+            opacity: 1;
+            scale: 100%;
+        }
+    }
+    .container_tercer_slide .nuevo_penol img{
+        view-timeline-name: --image2;
+        view-timeline-axis: block;
+        animation-timeline: --image2;
+        animation-name: show_imagen_penol;
+        animation-range: entry 25% cover 30%;
+        animation-fill-mode: both;
+    }
+    .seccion_dos .apelativos hr{
+        width: 70%;
+    }
+    
+    .seccion_dos .personaje{
+        font-family: "Ubuntu", sans-serif;
+        text-align: center;
+        font-size: 19px;
+    }
+    
+    .seccion_dos .economia h1{
+        font-family: "Ubuntu", sans-serif;
+        text-align: center;
+        font-size: 29px;
+        color: rgb(255, 145, 0);
+        
+    }
+    .seccion_dos .economia p{
+        font-family: "Ubuntu", sans-serif;
+        line-height: 2;
+        text-align: center;
+        
+    
+    }
+    .seccion_dos .economia .imagen_economia{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .seccion_dos .economia .imagen_economia img{
+        width: 300px;
+        height: fit-content;
+    }
+    
+    .seccion_dos .represa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .seccion_dos .represa img{
+        width: 80em;
+        height: fit-content;
+    }
+    
+    
+    
+    
+    .footer_container{
+        width: 100%;
+        padding: 70px 30px;
+    }
+    
+    .social_icons{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social_icons a{
+        text-decoration: none;
+        padding: 20px;
+        background-color: #000000;
+        color: white;
+        margin: 30px;
+        border-radius: 50%;
+    }
+    
+    .social_icons a{
+        font-size: 2em;
+        opacity: 0.5;
+    }
+    
+    .social_icons a:hover{
+        background-color: #111;
+        transition: 0.5s;
+    }
+    
+    .social_icons a:hover i{
+        background-color: #000000;
+        transition: 0.2s;
+    }
+    
+    .footer_nav{
+        margin: 30px 0;
+    }
+    
+    .footer_nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    .footer_nav ul  li a{
+        color: rgb(0, 0, 0);
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    .footer_nav  ul li a:hover{
+        opacity:0.1
+    }
+    
+    
+    .bottm{
+        background-color: rgb(0, 0, 0);
+        padding: 12px;
+        font-size: 12px;
+        color: rgb(255, 253, 253);
+        text-align: center;
+        font-size: 19px;
+        font-style: bold;
+    }
+    
+    
+    /**Diseño responsive aqui debajo**/
+    /*Responsive design*/
+    
+    
+    
